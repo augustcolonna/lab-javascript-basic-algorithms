@@ -74,7 +74,7 @@ console.log(count);
 //bonus 2
 
 const phraseToCheck = "race car"
-const newPhrase = phraseToCheck.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
+const newPhrase = phraseToCheck.replace(/[^A-Za-z0-9]/g, '')
 
 let palindrome = "";
 
@@ -84,7 +84,7 @@ for (let i = newPhrase.length - 1; i > -1; i--){
 }
 
 if (palindrome === newPhrase){
-    console.log('its a palindrome');
+    console.log(palindrome);
 }
 else{
     console.log('not a palindrome')
