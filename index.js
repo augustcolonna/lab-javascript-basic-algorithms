@@ -18,14 +18,19 @@ else if (hacker2.length == hacker1.length){
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 // Iteration 3: Loops
-for (let i=0; i < hacker1.length; i++){
+//3.1
+
+for (let i = 0; i < hacker1.length; i++){
     console.log(hacker1[i]);
 }
 
-for (let j = 6; j > 0; j--){
+//3.2
+for (let j = hacker2.length - 1; j > -1; j--){
     console.log(hacker2[j]);
 }
 
+
+//3.3
 const array = [hacker1, hacker2];
 
 for (let i=0; i < array.length ;i++) {
@@ -66,11 +71,24 @@ for (let i=0 ; i < longText.length ; i++){
 console.log(count);
 
 
+//bonus 2
+
+const phraseToCheck = "race car"
+const newPhrase = phraseToCheck.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
+
+let palindrome = "";
 
 
+for (let i = newPhrase.length - 1; i > -1; i--){
+    palindrome += newPhrase[i];
+}
 
-
-
+if (palindrome === newPhrase){
+    console.log('its a palindrome');
+}
+else{
+    console.log('not a palindrome')
+}
 
 
 
