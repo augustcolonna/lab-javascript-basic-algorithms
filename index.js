@@ -19,15 +19,26 @@ else if (hacker2.length == hacker1.length){
 }
 // Iteration 3: Loops
 //3.1
+let spacedName = ""
 
 for (let i = 0; i < hacker1.length; i++){
-    console.log(hacker1[i]);
+    
+    spacedName += hacker1[i].toLocaleUpperCase()
+    
+        if (i < hacker1.length - 1){
+            spacedName += " ";
+        }
 }
 
+console.log(spacedName);
+
 //3.2
-for (let j = hacker2.length - 1; j > -1; j--){
-    console.log(hacker2[j]);
+
+let reverseName = ""
+for (let j = hacker2.length - 1; j >= 0; j--){
+    reverseName += hacker2[j]
 }
+console.log(reverseName);
 
 
 //3.3
